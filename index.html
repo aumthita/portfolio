@@ -3,77 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio Element</title>
-  <meta name="description" content="Portfolio element preview" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: #0b0b0c;
-      color: #e9e9ec;
-    }
-    header {
-      background: #151518;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-    }
-    h1 { margin: 0; font-size: 1.5rem; }
-    p { margin: .25rem 0 0; color: #9a9aa3; }
-    main { padding: 1.5rem; }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      background: #1b1b1f;
-      border-radius: 12px;
-      padding: 1rem;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      display: block;
-    }
-    figcaption {
-      font-size: 0.9rem;
-      color: #9a9aa3;
-      margin-top: .5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #7d7d86;
-    }
-  </style>
+  <title>Portfolio</title>
 </head>
-<body>
-  <header>
-    <h1>Portfolio Element</h1>
-    <p>งานพอร์ตขนาด 1920 × 13792 (RGB)</p>
-  </header>
-
-  <main>
-    <div class="container">
-      <figure>
-        <!-- เปลี่ยนชื่อไฟล์ตรงนี้ให้ตรงกับรูปที่คุณอัปขึ้นโฟลเดอร์ images -->
-        <img src="images/portfolio-element.jpg" 
-             alt="Portfolio element" 
-             width="1920" height="13792" 
-             loading="lazy" decoding="async">
-        <figcaption>
-          ภาพยาวมาก เลื่อนดูได้ตามสบาย
-        </figcaption>
-      </figure>
-    </div>
-  </main>
-
-  <footer>
-    © <span id="y"></span> Your Name
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<body style="margin:0; padding:0;">
+  <img src="portfolio.jpg" 
+       alt="Portfolio" 
+       style="display:block; width:100%; height:auto;" 
+       loading="lazy" decoding="async">
 </body>
 </html>
